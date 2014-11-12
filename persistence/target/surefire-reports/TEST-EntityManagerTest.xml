@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="1.834" errors="0" skipped="0" tests="9" name="EntityManagerTest">
+  <properties>
+    <property name="jboss.i18n.generate-proxies" value="true"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="24.51-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/private/student/6/26/27008626/M2/GLA/carte_grise/persistence"/>
+    <property name="java.runtime.version" value="1.7.0_51-mockbuild_2014_01_31_16_21-b00"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="basedir" value="/private/student/6/26/27008626/M2/GLA/carte_grise/persistence"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="/private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/surefire/surefirebooter4969892884954490656.jar"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre-abrt/lib/amd64/server:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre-abrt/lib/amd64:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre-abrt/../lib/amd64:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/amd64/server:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/amd64:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/../lib/amd64:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre-abrt/lib/amd64/server:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre-abrt/lib/amd64:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre-abrt/../lib/amd64:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/amd64/server:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="surefire.test.class.path" value="/private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/test-classes:/private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/classes:/private/student/6/26/27008626/.m2/repository/org/hsqldb/hsqldb/2.3.2/hsqldb-2.3.2.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.6.Final/hibernate-entitymanager-4.3.6.Final.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar:/private/student/6/26/27008626/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/private/student/6/26/27008626/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/private/student/6/26/27008626/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/private/student/6/26/27008626/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-orm/4.1.1.RELEASE/spring-orm-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-beans/4.1.1.RELEASE/spring-beans-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-core/4.1.1.RELEASE/spring-core-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-jdbc/4.1.1.RELEASE/spring-jdbc-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-tx/4.1.1.RELEASE/spring-tx-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-test/4.1.1.RELEASE/spring-test-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/junit/junit/4.11/junit-4.11.jar:/private/student/6/26/27008626/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-context/4.1.1.RELEASE/spring-context-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-aop/4.1.1.RELEASE/spring-aop-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-expression/4.1.1.RELEASE/spring-expression-4.1.1.RELEASE.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.15.10-200.fc20.x86_64"/>
+    <property name="user.home" value="/private/student/6/26/27008626"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="27008626"/>
+    <property name="java.class.path" value="/private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/test-classes:/private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/classes:/private/student/6/26/27008626/.m2/repository/org/hsqldb/hsqldb/2.3.2/hsqldb-2.3.2.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.6.Final/hibernate-entitymanager-4.3.6.Final.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar:/private/student/6/26/27008626/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/private/student/6/26/27008626/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/private/student/6/26/27008626/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar:/private/student/6/26/27008626/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/private/student/6/26/27008626/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/private/student/6/26/27008626/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-orm/4.1.1.RELEASE/spring-orm-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-beans/4.1.1.RELEASE/spring-beans-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-core/4.1.1.RELEASE/spring-core-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-jdbc/4.1.1.RELEASE/spring-jdbc-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-tx/4.1.1.RELEASE/spring-tx-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-test/4.1.1.RELEASE/spring-test-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/junit/junit/4.11/junit-4.11.jar:/private/student/6/26/27008626/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-context/4.1.1.RELEASE/spring-context-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-aop/4.1.1.RELEASE/spring-aop-4.1.1.RELEASE.jar:/private/student/6/26/27008626/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/private/student/6/26/27008626/.m2/repository/org/springframework/spring-expression/4.1.1.RELEASE/spring-expression-4.1.1.RELEASE.jar:"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre"/>
+    <property name="sun.java.command" value="/private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/surefire/surefirebooter4969892884954490656.jar /private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/surefire/surefire7363405734391198141tmp /private/student/6/26/27008626/M2/GLA/carte_grise/persistence/target/surefire/surefire3711712710064888336tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_51"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/netx.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/plugin.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/rhino.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.5.1.fc20.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="/private/student/6/26/27008626/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.073" classname="EntityManagerTest" name="TestVehicule"/>
+  <testcase time="0.005" classname="EntityManagerTest" name="TestType"/>
+  <testcase time="0.008" classname="EntityManagerTest" name="TestParticulier"/>
+  <testcase time="0.005" classname="EntityManagerTest" name="testEm"/>
+  <testcase time="0.006" classname="EntityManagerTest" name="TestSociete"/>
+  <testcase time="0.004" classname="EntityManagerTest" name="TestMarque"/>
+  <testcase time="0.006" classname="EntityManagerTest" name="TestAppartenance"/>
+  <testcase time="0.007" classname="EntityManagerTest" name="TestCarteGrise"/>
+  <testcase time="0.004" classname="EntityManagerTest" name="TestModel"/>
+</testsuite>
